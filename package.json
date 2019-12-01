@@ -1,7 +1,7 @@
 {
-  "name": "@trygve-lie/publish-test",
+  "name": "@trygve-lie/auto-publish",
   "version": "1.0.0",
-  "description": "Test of automatic publish to npm from github actions",
+  "description": "A test setup of automatic publish to npm from github actions",
   "main": "index.js",
   "scripts": {
     "test": "tap test.js"
