@@ -1,5 +1,5 @@
 {
-  "name": "@trygve-lie/auto-publish",
+  "name": "actions-auto-publish",
   "version": "1.0.0",
   "description": "A test setup of automatic publish to npm from github actions",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trygve-lie/publish-test.git"
+    "url": "git+https://github.com/trygve-lie/auto-publish.git"
   },
   "author": "Trygve Lie",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/trygve-lie/publish-test/issues"
+    "url": "https://github.com/trygve-lie/auto-publish/issues"
   },
-  "homepage": "https://github.com/trygve-lie/publish-test#readme",
+  "homepage": "https://github.com/trygve-lie/auto-publish#readme",
   "devDependencies": {
     "tap": "^14.10.2"
   }
