@@ -1,0 +1,22 @@
+{
+  "name": "@trygve-lie/publish-test",
+  "version": "1.0.0",
+  "description": "Test of automatic publish to npm from github actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trygve-lie/publish-test.git"
+  },
+  "author": "Trygve Lie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trygve-lie/publish-test/issues"
+  },
+  "homepage": "https://github.com/trygve-lie/publish-test#readme",
+  "devDependencies": {
+    "tap": "^14.10.2"
+  }
+}
