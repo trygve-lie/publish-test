@@ -1,3 +1,10 @@
+name: Push To Master
+
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   build:
     runs-on: ubuntu-latest
