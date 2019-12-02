@@ -1,7 +1,8 @@
 'use strict';
 
 const foo = () => {
-    const value = 42;
-    return value;
+    const value = 40;
+    const plus = 2;
+    return value + plus;
 };
 module.exports.foo = foo;
