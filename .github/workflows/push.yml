@@ -8,27 +8,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macOS-latest, windows-latest]
-        node-version: [10.x, 12.x, 13.x]
     steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Set up Node.js 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm install
+          node-version: 12.x
+      - name: Install dependencies
         run: |
           npm install
         env:
           CI: true
-      - name: Run linting and tests
+      - name: Run tests
         run: |
           npm test
         env:
           CI: true
-      - name: Publish
+      - name: Publish to NPM
         if: github.ref == 'refs/heads/master'
         uses: mikeal/merge-release@master
         env:
