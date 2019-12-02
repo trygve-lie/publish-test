@@ -1,4 +1,4 @@
-name: Push To Master
+name: Publish Master To NPM
 
 on:
   push:
