@@ -25,7 +25,7 @@ jobs:
           CI: true
       - name: Run linting and tests
         run: |
-          npm run lint && npm test
+          npm test
         env:
           CI: true
       - name: Publish
