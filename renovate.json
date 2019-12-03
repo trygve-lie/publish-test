@@ -8,5 +8,9 @@
     "major": {
       "automerge": false
     }
+  },
+  {
+    "depTypeList": ["devDependencies"],
+    "automerge": false
   }]
 }
