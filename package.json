@@ -28,6 +28,6 @@
     "tap": "14.10.2"
   },
   "dependencies": {
-    "actions-auto-publish-dep": "1.1.0"
+    "actions-auto-publish-dep": "1.1.1"
   }
 }
