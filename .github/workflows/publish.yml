@@ -19,9 +19,11 @@ jobs:
     with:
       node-version: ${{ matrix.node-version }}
   - name: Install
-      run: npm ci
+      run: |
+        npm install
   - name: Test
-      run: npm test
+      run: |
+        npm test
 
  release:
   if: github.event_name == 'push' && github.ref == 'refs/heads/master'
@@ -37,10 +39,12 @@ jobs:
       node-version: 12.x
 
   - name: Install
-    run: npm ci
+    run: |
+      npm install
 
   - name: Release
-    run: npx semantic-release
+    run: |
+      npx semantic-release
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
