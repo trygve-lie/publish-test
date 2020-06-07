@@ -40,6 +40,6 @@
     "tap": "14.10.7"
   },
   "dependencies": {
-    "actions-auto-publish-dep": "1.1.1"
+    "actions-auto-publish-dep": "1.1.2"
   }
 }
